@@ -1,0 +1,36 @@
+QTERM5f for Amstrad PCW
+
+The contents of this file will produce a version (5f) of Qterm that will
+enable the program to run on any Amstrad PCW with a modem setting
+of 9,600 bps without 'dropping' bytes.  Additionally, if a Fax Link
+interface is in use then speeds of 38,400 bps can be used. The program has
+shown a satisfactory performance at this speed.
+ 
+As direct port addressing is used and since the Fax link uses different
+port addresses from the CPS8256 or equivalent interface, the assembly
+routine provides for easy selection of the required program version.
+ 
+If a Fax link is fitted, then the BIOS (the J??CPM3 file) must be modified
+to suit. Ian Macdonald's FAXPATCH archive is available for this purpose from
+PCW-PD (contact Paul Westlake at paul.pcw.pd@mkbbs.co.uk) and by anonymous
+FTP from Demon (ftp.demon.co.uk in the /pub/cpm/amstrad directory).
+
+Qterm will not run satisfactorily after FAX.COM or COMM.COM until the computer
+has been re-set by switching off, although Ian has a file that will conquer
+this (included in the FAXPATCH archive).
+ 
+To obtain Qterm5f have the contents of this file (QTERMNEW.BAS, QTERMCOM.COM
+and QTERMRSX.ASM) on drive M: together with BASIC.COM and SUBMIT.COM.
+Select drive M: as the default drive.  Have the programming utilites issued
+with every PCW (on side 3 with an 8256/8512) in drive A:.
+Enter <BASIC QTERMNEW> and select <Y> or <N> for Sprinter and/or Fax link.
+If a default Serial speed other than 1200 bps is wanted, enter as appropriate.
+The program will then be patched accordingly, and will be written as QTERM5f.COM
+on drive M:.
+ 
+Stephen Younger         |  CompuServe 100014,661
+Denbrae House           |  sjy@st-andrews.ac.uk
+St. Andrews             |  Tel: +44 1334 850572
+Fife    KY16 8NY        |  Fax: only after voice        14th June 1995
+ill produce a version (5f) of Qterm that will
+enable the program to run o
