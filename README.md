@@ -47,9 +47,9 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 You can either order this directly from its project page on PCBWay, or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
-[Index](#perryfi)
-
 ![image](images/pcbrender.png)
+
+[Index](#perryfi)
 
 <br />
 
