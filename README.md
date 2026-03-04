@@ -39,8 +39,6 @@ The older CP/M utilities included are believed to be public domain.
 
 The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CERN-OHL-S](https://opensource.org/license/cern-ohl-s), as is the rest of the content in this repo. Please make sure you read and understand the terms of this licence if you plan to build, sell or release modified versions of the PerryFi.
 
-![image](images/pcbrender.png)
-
 [Index](#perryfi)
 
 <br />
@@ -50,6 +48,8 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 You can either order this directly from its project page on PCBWay, or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
 [Index](#perryfi)
+
+![image](images/pcbrender.png)
 
 <br />
 
