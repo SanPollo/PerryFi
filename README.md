@@ -25,7 +25,7 @@ PerryFi is designed to either plug into the [PCW Backplane](https://github.com/S
 
 ![image](images/built.jpg)
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -41,7 +41,7 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 ![image](images/pcbrender.png)
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -49,7 +49,7 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 You can either order this directly from its project page on PCBWay, or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -87,7 +87,7 @@ For the two vintage chips, IC1 and U1, to avoid fake vintage chips, I highly rec
 
 Please note that the **Sources** I have specified are based on research I did after assembling my prototypes, and are there for your convenience. Double-check each component before ordering, and let me know if there are any issues, or if the links were useful by raising an issue.
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -109,7 +109,7 @@ If you decide to using an edge connector, the connector must be mounted on the *
 
 The PerryFi then fits to the expansion port, as you look at it from the rear of the PCW, so that the WeMos D1 mini is on the top left facing you, and the edge connector is on right hand side, underneath the board.
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -145,7 +145,7 @@ To do this, you will need the project in the [src/RetroWiFiModem](src/RetroWiFiM
 
 Beyond this, it is out of the scope of this documentation. If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -197,7 +197,7 @@ Note that this can be used at any time when you are connected to a remote comput
 
 ![image](images/bbsconnect.jpg)
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -205,7 +205,7 @@ Note that this can be used at any time when you are connected to a remote comput
 
 For a complete list of AT commands, including more settings, [check the list](https://github.com/mecparts/RetroWiFiModem#command-reference) on the original mecparts GitHub repo.
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -215,7 +215,7 @@ The DSK image contains a selection of comms-related software to get you started.
 
 It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCWWiFIModem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
 
-[Index](#perry-fi)
+[Index](#perryfi)
 
 <br />
 
@@ -227,4 +227,4 @@ To do this, refer to the instructions in [src/qterm5ae/files/#_READ.ME](src/qter
 
 I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images.
 
-[Index](#perry-fi)
+[Index](#perryfi)
