@@ -46,7 +46,7 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 ## Obtaining the PCB
 
-You can either order this directly from its [project page on PCBWay](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html), or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
+You can either order this directly from its [project page on PCBWay](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html), or from [downloading the gerbers](raw/refs/heads/main/gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
 ![image](images/pcbrender.png)
 
@@ -134,7 +134,7 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 4. Right-click on the **Start** menu button, and choose **Device Manager**
 5. Expand the **Ports (COM & LPT)** section and look for **DEVICE NAME**. Make a note the COM port number e.g. **COM3**
 6. Download the latest version of the ESP Easy Flasher software [from here](https://github.com/raomin/ESPEasyFlasher/releases), and extract it somewhere you can find it.
-7. Download the [firmware from here](firmware/perryfi.bin), and put it in the same folder you extracted ESP Easy Flasher.
+7. Download the [firmware from here](raw/refs/heads/main/firmware/perryfi.bin), and put it in the same folder you extracted ESP Easy Flasher.
 8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **firmware.bin** file.
 9. Click **Upload to ESP**.
 
@@ -224,7 +224,7 @@ It is beyond the scope of this documentation to describe how each piece of softw
 
 You may wish to build QTERM yourself if you want to change one or more of the default options.
 
-To do this, refer to [the build instructions](src/qterm5ae/files/%23_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
+To do this, refer to [the build instructions](raw/refs/heads/main/src/qterm5ae/files/%23_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
 
 I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images. 
 
