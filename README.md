@@ -104,7 +104,7 @@ For use with the PCW Backplane, fit the 90-degree box header to the component si
 
 ### Edge Connector
 
-Note that PerryFi has not yet been tested directly connected to the expansion port, so if you do this, and have confirmed that there are no issues, please log an [issue](issues/) so I can update this documentation.
+Note that PerryFi has not yet been tested directly connected to the expansion port, so if you do this, and have confirmed that there are no issues, please log an issue so I can update this documentation.
 
 If you decide to using an edge connector, the connector must be mounted on the **reverse side** of the PCB, with the component side facing outwards.
 
@@ -152,7 +152,7 @@ If you need further assistance, please use the [Arduino forum](https://forum.ard
 
 ## PerryFi Configuration
 
-To get started, download the [included DSK image](software/perryfi.dsk) and copy the image to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Simply boot from your usual DSK image, switch to the floppy and run **QTERM5F.COM**
+To get started, download the [included DSK image](https://github.com/SanPollo/PerryFi/raw/refs/heads/main/software/perryfi.dsk), and copy the image to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Simply boot from your usual DSK image, switch to the floppy and run **QTERM5F.COM**
 
 The default baud rate for the PerryFi is 9600, and the version of QTerm on the DSK is already set to default to this.
 
@@ -237,5 +237,6 @@ I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.i
 * [PCBWay Project Page](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html)
 * [PCW WiFI Modem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki)
 * [Retro WiFi Modem](https://github.com/mecparts/RetroWiFiModem)
+
 
 [Index](#perryfi)
