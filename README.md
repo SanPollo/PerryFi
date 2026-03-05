@@ -224,7 +224,7 @@ It is beyond the scope of this documentation to describe how each piece of softw
 
 You may wish to build QTERM yourself if you want to change one or more of the default options.
 
-To do this, refer to [the build instructions](src/qterm5ae/files/#_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
+To do this, refer to [the build instructions](src/qterm5ae/files/%23_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
 
 I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images. 
 
