@@ -10,6 +10,7 @@
 8. [Command Reference](#command-reference)
 9. [Included Software](#included-software)
 10. [Building QTERM](#building-qterm)
+11. [Links](#links)
 
 <br />
 
@@ -45,7 +46,7 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 ## Obtaining the PCB
 
-You can either order this directly from its project page on PCBWay, or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
+You can either order this directly from its [project page on PCBWay](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html), or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
 ![image](images/pcbrender.png)
 
@@ -141,9 +142,9 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 
 You may wish to tweak the firmware, for example to change the default baud rate, or even to develop it further.
 
-To do this, you will need the project in the [src/RetroWiFiModem](src/RetroWiFiModem) directory, the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
+To do this, you will need the Arduino project in the [src/RetroWiFiModem directory](src/RetroWiFiModem), the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
 
-Beyond this, it is out of the scope of this documentation. If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
+If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
 
 [Index](#perryfi)
 
@@ -213,7 +214,7 @@ For a complete list of AT commands, including more settings, [check the list](ht
 
 The DSK image contains a selection of comms-related software to get you started.
 
-It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCWWiFIModem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
+It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCW WiFI Modem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
 
 [Index](#perryfi)
 
@@ -223,8 +224,18 @@ It is beyond the scope of this documentation to describe how each piece of softw
 
 You may wish to build QTERM yourself if you want to change one or more of the default options.
 
-To do this, refer to the instructions in [src/qterm5ae/files/#_READ.ME](src/qterm5ae/files/#_READ.ME)
+To do this, refer to [the build instructions](src/qterm5ae/files/#_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
 
-I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images.
+I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images. 
+
+[Index](#perryfi)
+
+<br />
+
+## Links
+
+* [PCBWay Project Page](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html)
+* [PCW WiFI Modem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki)
+* [Retro WiFi Modem](https://github.com/mecparts/RetroWiFiModem)
 
 [Index](#perryfi)
