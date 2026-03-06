@@ -8,7 +8,7 @@
 		(title "PerryFi")
 		(date "2026-02-03")
 		(rev "1.0")
-		(comment 1 "All rights reserved.")
+		(comment 1 "Licensed under CERN Open Hardware Licence Version 2: CERN-OHL-S")
 		(comment 2 "©2026 Nick J. Date")
 		(comment 4 "https://github.com/SanPollo/PerryFi")
 	)
