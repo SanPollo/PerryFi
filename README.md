@@ -91,7 +91,9 @@ Please note that the **Sources** I have specified are based on research I did af
 
 PerryFi can either be connected to the PCW using a [PCW Backplane](https://github.com/SanPollo/PCWBackplane), or directly with an edge connector.
 
-Note, if you are using the backplane, that the connector will be mounted on the very edge of the PerryFi board. Therefore, it is not possible to solder it flush to the board unless you use something like Blu Tac to raise it up a little.
+However, if you use an edge connector, due to spacing, you will need to bend the pins in order. This has not been tested, so your mileage may vary.
+
+Note, if you are using the backplane, that the connector will be mounted on the very edge of the PerryFi board. Therefore, it is not possible to solder it flush to the board unless you use something like Blu Tac to raise it up slightly.
 
 ### PCW Backplane
 
