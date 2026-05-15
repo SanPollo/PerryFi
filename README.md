@@ -10,7 +10,6 @@
 8. [Command Reference](#command-reference)
 9. [Included Software](#included-software)
 10. [Building QTERM](#building-qterm)
-11. [Links](#links)
 
 <br />
 
@@ -32,13 +31,9 @@ PerryFi is designed to either plug into the [PCW Backplane](https://github.com/S
 
 ## Licences
 
-The licence details for each part of this project are in their respective subdirectories, in a file called LICENSE.md, where this has been possible to determine.
-
-Both VapourSoft's PCW WiFi Modem schematic, and the mecparts's Retro WiFi Modem firmware for the ESP8266 are both licensed under the terms of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html), so please check this before modifying or redistributing.
+The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CERN-OHL-S](https://opensource.org/license/cern-ohl-s), as is the rest of the content in this repo. Please make sure you read and understand the terms of this licence if you plan to build, sell or release modified versions of the PerryFi.
 
 The older CP/M utilities included are believed to be public domain.
-
-The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CERN-OHL-S](https://opensource.org/license/cern-ohl-s), as is the rest of the content in this repo. Please make sure you read and understand the terms of this licence if you plan to build, sell or release modified versions of the PerryFi.
 
 [Index](#perryfi)
 
@@ -46,7 +41,7 @@ The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CER
 
 ## Obtaining the PCB
 
-You can either order this directly from its [project page on PCBWay](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html), or from [downloading the gerbers](https://github.com/SanPollo/PerryFi/raw/refs/heads/main/gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
+You can either order this directly from its project page on PCBWay, or from [downloading the gerbers](gerbers/PerryFiV1.0R.zip), and uploading them to your favourite PCB manufacturer. I highly recommend JLCPCB.
 
 ![image](images/pcbrender.png)
 
@@ -104,7 +99,7 @@ For use with the PCW Backplane, fit the 90-degree box header to the component si
 
 ### Edge Connector
 
-Note that PerryFi has not yet been tested directly connected to the expansion port, so if you do this, and have confirmed that there are no issues, please log an issue so I can update this documentation.
+Note that PerryFi has not yet been tested directly connected to the expansion port, so if you do this, and have confirmed that there are no issues, please log an [issue](issues/) so I can update this documentation.
 
 If you decide to using an edge connector, the connector must be mounted on the **reverse side** of the PCB, with the component side facing outwards.
 
@@ -132,19 +127,19 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 2. If your D1 mini uses a CH340 for serial, download and install the [CH340 driver](https://www.wch-ic.com/downloads/CH341SER_ZIP.html) before proceeding.
 3. Connect the D1 mini into your Windows computer using the relevant USB cable.
 4. Right-click on the **Start** menu button, and choose **Device Manager**
-5. Expand the **Ports (COM & LPT)** section, and look for the ESP8266 device. Make a note the COM port number after it e.g. **COM3**
+5. Expand the **Ports (COM & LPT)** section and look for **DEVICE NAME**. Make a note the COM port number e.g. **COM3**
 6. Download the latest version of the ESP Easy Flasher software [from here](https://github.com/raomin/ESPEasyFlasher/releases), and extract it somewhere you can find it.
-7. Download the [firmware from here](https://github.com/SanPollo/PerryFi/raw/refs/heads/main/firmware/perryfi.bin), and put it in the same folder you extracted ESP Easy Flasher.
-8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **firmware.bin** file.
+7. Download **perryfi.bin** from the [latest firmware release](https://github.com/SanPollo/PerryFiFW/releases/latest), and put it in the same folder in which you extracted ESP Easy Flasher.
+8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **perryfi.bin** file.
 9. Click **Upload to ESP**.
 
 ### Building the Firmware
 
 You may wish to tweak the firmware, for example to change the default baud rate, or even to develop it further.
 
-To do this, you will need the Arduino project in the [src/RetroWiFiModem directory](src/RetroWiFiModem), the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
+To do this, you will need the source from the [PerryFi Firmware](https://github.com/SanPollo/PerryFiFW) repository, the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
 
-If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
+Beyond this, it is out of the scope of this documentation. If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
 
 [Index](#perryfi)
 
@@ -152,7 +147,7 @@ If you need further assistance, please use the [Arduino forum](https://forum.ard
 
 ## PerryFi Configuration
 
-To get started, download the [included DSK image](https://github.com/SanPollo/PerryFi/raw/refs/heads/main/software/perryfi.dsk), and copy the image to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Simply boot from your usual DSK image, switch to the floppy and run **QTERM5F.COM**
+To get started, download the [included DSK image](software/perryfi.dsk) and copy the image to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Simply boot from your usual DSK image, switch to the floppy and run **QTERM5F.COM**
 
 The default baud rate for the PerryFi is 9600, and the version of QTerm on the DSK is already set to default to this.
 
@@ -214,7 +209,7 @@ For a complete list of AT commands, including more settings, [check the list](ht
 
 The DSK image contains a selection of comms-related software to get you started.
 
-It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCW WiFI Modem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
+It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCWWiFIModem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
 
 [Index](#perryfi)
 
@@ -224,19 +219,8 @@ It is beyond the scope of this documentation to describe how each piece of softw
 
 You may wish to build QTERM yourself if you want to change one or more of the default options.
 
-To do this, refer to [the build instructions](https://github.com/SanPollo/PerryFi/raw/refs/heads/main/src/qterm5ae/files/%23_READ.ME). Note that it requires the Programming Utilities from side 3 of the [Amstrad PCW system discs](https://www.habisoft.com/pcwwiki/lib/exe/fetch.php?media=juegos:descargas:pcw8000_series_system_disks_1985_amsoft_en_.zip).
+To do this, refer to the instructions in [src/qterm5ae/files/#_READ.ME](src/qterm5ae/files/#_READ.ME)
 
-I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images. 
-
-[Index](#perryfi)
-
-<br />
-
-## Links
-
-* [PCBWay Project Page](https://www.pcbway.com/project/shareproject/PerryFi_Amstrad_PCW_Wifi_Modem_0efd1574.html)
-* [PCW WiFI Modem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki)
-* [Retro WiFi Modem](https://github.com/mecparts/RetroWiFiModem)
-
+I recommend using an emulator such as John Elliot's [JOYCE](https://www.seasip.info/Unix/Joyce/), and a tool such as [CIFE](https://github.com/ProgrammingHobby/Cife) to transfer files to and from DSK images.
 
 [Index](#perryfi)
