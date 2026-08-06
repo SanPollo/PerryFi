@@ -15,13 +15,9 @@
 
 ## Introduction
 
-PerryFi is a wifi modem expansion for Amstrad PCW computers. It is a PCB based on [VapourSoft](https://github.com/VapourSoft)'s [PCW WiFi Modem](https://github.com/VapourSoft/PCWWiFiModem) schematic. The PCW WiFI Modem itself is a fork of [Retro WiFi Modem](https://github.com/mecparts/RetroWiFiModem) by [mecparts](https://github.com/mecparts), who in turn cites inspiration from a [message thread](https://forum.vcfed.org/index.php?threads/wifi232s-evil-clone.1070412/) on the VCF forums, Paul Rickards's [WiFi232](https://biosrhythm.com/?page_id=1453), and Daniel Jameson's [Virtual Modem for ESP8266](https://github.com/stardot/esp8266_modem).
+PerryFi is a wifi modem expansion for Amstrad PCW computers. It is a PCB based on [VapourSoft](https://github.com/VapourSoft)'s [PCW WiFi Modem](https://github.com/VapourSoft/PCWWiFiModem) schematic. The PCW WiFI Modem combines an [Amstrad CPS8256 serial interface](https://www.cpcwiki.eu/index.php/Amstrad_Serial_Interface#Schematic_and_More_.28CPS8256.29) clone with the [ESP8266](https://en.wikipedia.org/wiki/ESP8266)-based [Retro WiFi Modem](https://github.com/mecparts/RetroWiFiModem) by [mecparts](https://github.com/mecparts). mecparts cites inspiration from a [message thread](https://forum.vcfed.org/index.php?threads/wifi232s-evil-clone.1070412/) on the VCF forums, Paul Rickards's [WiFi232](https://biosrhythm.com/?page_id=1453), and Daniel Jameson's [Virtual Modem for ESP8266](https://github.com/stardot/esp8266_modem).
 
-The PCW does not contain the electronics for an RS232 serial port built in, and required a [CPS8256 serial interface](https://www.cpcwiki.eu/index.php/Amstrad_Serial_Interface#Schematic_and_More_.28CPS8256.29) to connect to an analogue modem or serial printer.
-
-The PerryFi combines a serial interface with an [ESP8266 microcontroller](https://en.wikipedia.org/wiki/ESP8266). The ESP8266 is perfect for this task, as it has a built in TCP/IP network stack, wifi connectivity, and its default firmware uses Hayes modem-style AT commands.
-
-PerryFi is designed to either plug into the [PCW Backplane](https://github.com/SanPollo/PCWBackplane), or directly into the back of the PCW using the expansion edge connector. Please check the [Connector](#connector) section for more information.
+The PerryFi is designed to plug into the [PCW Backplane](https://github.com/SanPollo/PCWBackplane). While it can technically be plugged directly into the back of the PCW using the expansion edge connector, the connector is wider than the two rows of bins, so this configuration would not be stable. Please check the [Connector](#connector) section for more information.
 
 ![image](images/built.jpg)
 
@@ -33,7 +29,7 @@ PerryFi is designed to either plug into the [PCW Backplane](https://github.com/S
 
 The PerryFi PCB is licensed under the [CERN Open Hardware Licence Version 2: CERN-OHL-S](https://opensource.org/license/cern-ohl-s), as is the rest of the content in this repo. Please make sure you read and understand the terms of this licence if you plan to build, sell or release modified versions of the PerryFi.
 
-The older CP/M utilities included are believed to be public domain.
+The older CP/M utilities included are believed to be in the public domain.
 
 [Index](#perryfi)
 
@@ -55,8 +51,7 @@ You can either order this directly from its project page on PCBWay, or from [dow
 | --- | --- | ---- | ------ |
 | C1 | 1 | 22uF 16V Electrolytical Capacitor | [Mouser](https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/860010372002?qs=0KOYDY2FL2%252B9WwJ0SbWRgQ%3D%3D) |
 | C2 - C9 | 8 | 0.1uF / 100 nF (104) Ceramic Capacitor | [Mouser](https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/K104K15X7RF5UL2?qs=rLgk8CAOBHbCqsnkGO2HJA%3D%3D) |
-| CONN | 1** | 2x25-pin 90-deg Keyed Male Box Header **OR**  | [AliExpress](https://www.aliexpress.com/w/wholesale-50-pin-2.54mm-male-connector-right-angle.html) |
-|  |  | 50-pin Female Edge Connector | [AliExpress](https://www.aliexpress.com/w/wholesale-50-pin-edge-connector.html) |
+| CONN | 1** | 2x25-pin 90-deg Keyed Male Box Header | [AliExpress](https://www.aliexpress.com/w/wholesale-50-pin-2.54mm-male-connector-right-angle.html) |
 | IC1 | 1*** | Z80 DART | [eBay](https://www.ebay.co.uk/sch/i.html?_nkw=z80+dart&_sacat=0&_from=R40&LH_BIN=1&_sop=15) |
 | R1 | 1 | 3k3 Resistor | [Mouser](https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/PR01000103301FA500?qs=doiCPypUmgFDZqxdWEJBZg%3D%3D) |
 | SKT IC1 | 1 | 40-pin IC DIP Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/Adam-Tech/ICS-640-T?qs=FG09h9tFCuAGM0DRDA70YA%3D%3D) |
@@ -64,7 +59,7 @@ You can either order this directly from its project page on PCBWay, or from [dow
 | SKT U2 | 2* | 6-pin SIL PIN Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/Adam-Tech/RS1-06-G?qs=HoCaDK9Nz5d%2FRbTZEteJ%252Bw%3D%3D) |
 | SKT U3 | 2 | 8-pin SIL PIN Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/Adam-Tech/RS1-08-G?qs=ogqIPVdloe88tnZzSgEOEg%3D%3D) |
 | SKT U4 - U6 | 3* | 14-pin IC DIP Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1-2199298-3?qs=fK8dlpkaUMtBOtVI99wRlQ%3D%3D) |
-| SKT U7 | 1* | 16-pin DIP Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1-2199298-4?qs=fK8dlpkaUMvpL10rY9Abiw%3D%3D) |
+| SKT U7 | 1 | 16-pin DIP Socket | [Mouser](https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1-2199298-4?qs=fK8dlpkaUMvpL10rY9Abiw%3D%3D) |
 | U1 | 1 | 8253 / 8254 Programmable Interval Timer | [eBay](https://www.ebay.co.uk/sch/i.html?_nkw=8253+timer&_sacat=0&_from=R40&LH_BIN=1&_sop=15) |
 | U2 | 1 | BOB-12009 3.3 to 5v Bidirectional Logic Converter | [Mouser](https://www.mouser.co.uk/ProductDetail/SparkFun/BOB-12009?qs=WyAARYrbSnb%252BGYLWggQnjQ%3D%3D) |
 | U3 | 1 | WEMOS D1 mini | [AliExpress](https://www.aliexpress.com/w/wholesale-wemos-d1-mini.html?spm=a2g0o.home.search.0) |
@@ -89,23 +84,11 @@ Please note that the **Sources** I have specified are based on research I did af
 
 ## Connector
 
-PerryFi can either be connected to the PCW using a [PCW Backplane](https://github.com/SanPollo/PCWBackplane), or directly with an edge connector.
+The PerryFi should be connected to the PCW using a [PCW Backplane](https://github.com/SanPollo/PCWBackplane).
 
-However, if you use an edge connector, due to spacing, you will need to bend the pins in order. This has not been tested, so your mileage may vary.
+However, if you decide to use an edge connector, due to spacing, you will need to bend the pins inwards in order for it to fit. This has not been tested, so your mileage may vary. If you do not wish to build a backplane, a custom ribbon cable is highly recommended.
 
-Note, if you are using the backplane, that the connector will be mounted on the very edge of the PerryFi board. Therefore, it is not possible to solder it flush to the board unless you use something like Blu Tac to raise it up slightly.
-
-### PCW Backplane
-
-For use with the PCW Backplane, fit the 90-degree box header to the component side of the board.
-
-### Edge Connector
-
-Note that PerryFi has not yet been tested directly connected to the expansion port, so if you do this, and have confirmed that there are no issues, please log an [issue](issues/) so I can update this documentation.
-
-If you decide to using an edge connector, the connector must be mounted on the **reverse side** of the PCB, with the component side facing outwards.
-
-The PerryFi then fits to the expansion port, as you look at it from the rear of the PCW, so that the WeMos D1 mini is on the top left facing you, and the edge connector is on right hand side, underneath the board.
+Note that the box connector will be mounted on the very edge of the PerryFi board. Therefore, it is not possible to solder it flush to the board unless you use something like Blu Tac to raise it up slightly.
 
 [Index](#perryfi)
 
@@ -131,17 +114,15 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 4. Right-click on the **Start** menu button, and choose **Device Manager**
 5. Expand the **Ports (COM & LPT)** section and look for **DEVICE NAME**. Make a note the COM port number e.g. **COM3**
 6. Download the latest version of the ESP Easy Flasher software [from here](https://github.com/raomin/ESPEasyFlasher/releases), and extract it somewhere you can find it.
-7. Download **perryfi.bin** from the [latest firmware release](https://github.com/SanPollo/PerryFiFW/releases/latest), and put it in the same folder in which you extracted ESP Easy Flasher.
-8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **perryfi.bin** file.
+7. Download latest release of the [PerryZi firmware](https://github.com/SanPollo/PerryZi/releases/latest) for the PerryFi 1.0, and put it in the same folder you extracted ESP Easy Flasher to.
+8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **.bin** file.
 9. Click **Upload to ESP**.
 
 ### Building the Firmware
 
 You may wish to tweak the firmware, for example to change the default baud rate, or even to develop it further.
 
-To do this, you will need the source from the [PerryFi Firmware](https://github.com/SanPollo/PerryFiFW) repository, the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
-
-Beyond this, it is out of the scope of this documentation. If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
+To do this, please see the instructions in the [PerryZi repository](https://github.com/SanPollo/PerryZi).
 
 [Index](#perryfi)
 
@@ -149,33 +130,17 @@ Beyond this, it is out of the scope of this documentation. If you need further a
 
 ## PerryFi Configuration
 
-To get started, download the [included DSK image](software/perryfi.dsk) and copy the image to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Simply boot from your usual DSK image, switch to the floppy and run **QTERM5F.COM**
+To get started, download the boot disc image for the [PCW 8256](software/perryfi_1.0_boot_8256.dsk) or the [PCW 8256](software/perryfi_1.0_boot_9512.dsk), depending on which type of PCW you own, and copy it to your [Gotek](https://github.com/SanPollo/PCWGotekMod). Boot the PCW from that image, and run **QTERM5F.COM**, which is already configured to the default baud rate of **9600**.
 
-The default baud rate for the PerryFi is 9600, and the version of QTerm on the DSK is already set to default to this.
+Note that this is the maximum speed for the PerryFi 1.0. Attempting to set the wifi modem firmware to a higher speed will result in an **ERROR** being displayed.
 
 ### Connect to your Wifi Network
 
-The PerryFi uses [Hayes-style AT commands](https://en.wikipedia.org/wiki/Hayes_AT_command_set), like an original analogue modem.
+To join your PerryFi to your wifi network, enter the following command in QTERM:
 
-First, we give the PerryFi the name by which it will be known on your wifi network. For example, `pcw8256` or `joyce`:
+`AT+CONFIG`
 
-`AT$MDNS=pcw8256`
-
-Next, we tell the device the name of your wifi network:
-
-`AT$SSID=yourwifinetwork`
-
-Then the wifi password:
-
-`AT$PASS=wifinetworkpassword`
-
-Now we bring the connection online:
-
-`ATC1`
-
-Assuming the connection is successful, save your settings to the PerryFi. You should do this every time you change a setting you want to keep, or it will be reverted the next time the PerryFi is rebooted:
-
-`AT&W`
+The configuration is menu driven. When you have finished, make sure you answer **y** when asked if you want to save your configuration.
 
 ### Test Your Connection
 
@@ -193,6 +158,8 @@ At this point, feel free to explore the BBS. If not, simply hang up the connecti
 
 Note that this can be used at any time when you are connected to a remote computer to drop the connection.
 
+To switch to VT100 emulation, press `[PASTE]` followed by `[V]`. When you want to exit QTERM, press `[PASTE]` and then `Q`.
+
 ![image](images/bbsconnect.jpg)
 
 [Index](#perryfi)
@@ -201,7 +168,9 @@ Note that this can be used at any time when you are connected to a remote comput
 
 ## Command Reference
 
-For a complete list of AT commands, including more settings, [check the list](https://github.com/mecparts/RetroWiFiModem#command-reference) on the original mecparts GitHub repo.
+The PerryFi uses [Hayes-style AT commands](https://en.wikipedia.org/wiki/Hayes_AT_command_set), like an original analogue modem.
+
+For a complete list of AT commands, including more settings, [see the list](https://github.com/SanPollo/PerryZi/wiki/Command-Reference) on the PerryZi wiki.
 
 [Index](#perryfi)
 
@@ -209,7 +178,7 @@ For a complete list of AT commands, including more settings, [check the list](ht
 
 ## Included Software
 
-The DSK image contains a selection of comms-related software to get you started.
+This [DSK image](software/perryfi_utils.dsk) contains a selection of comms-related software to get you started.
 
 It is beyond the scope of this documentation to describe how each piece of software works. However, I highly recommend [following the guide](https://github.com/VapourSoft/PCWWiFiModem/wiki/NIST-Internet-Time-Service-(ITS)) for setting your PCW's time and date from the internet using NIST on VapourSoft's excellent [PCWWiFIModem wiki](https://github.com/VapourSoft/PCWWiFiModem/wiki).
 
