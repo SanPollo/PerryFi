@@ -131,7 +131,7 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 4. Right-click on the **Start** menu button, and choose **Device Manager**
 5. Expand the **Ports (COM & LPT)** section and look for **DEVICE NAME**. Make a note the COM port number e.g. **COM3**
 6. Download the latest version of the ESP Easy Flasher software [from here](https://github.com/raomin/ESPEasyFlasher/releases), and extract it somewhere you can find it.
-7. Download latest release of the [PerryZi firmware](https://github.com/SanPollo/PerryZi/releases/latest), and extract it. Locate the **.bin** with **(PerryFi 1.0)** in its name, and put it in the same folder in which you extracted ESP Easy Flasher.
+7. Download **perryfi.bin** from the [latest firmware release](https://github.com/SanPollo/PerryFiFW/releases/latest), and put it in the same folder in which you extracted ESP Easy Flasher.
 8. Run **FlashESP8266.exe** from the same folder, and choose the COM port number from step 3, and the **perryfi.bin** file.
 9. Click **Upload to ESP**.
 
@@ -139,7 +139,9 @@ The easiest way to flash the included firmware to the D1 mini's ESP8266 is with 
 
 You may wish to tweak the firmware, for example to change the default baud rate, or even to develop it further.
 
-To do this, please see the instructions in the [PerryZi repository](https://github.com/SanPollo/PerryZi).
+To do this, you will need the source from the [PerryFi Firmware](https://github.com/SanPollo/PerryFiFW) repository, the [latest version of the Arduino IDE](https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Windows_64bit.exe), and the [ESP_EEPROM library](https://github.com/jwrw/ESP_EEPROM/releases).
+
+Beyond this, it is out of the scope of this documentation. If you need further assistance, please use the [Arduino forum](https://forum.arduino.cc/).
 
 [Index](#perryfi)
 
