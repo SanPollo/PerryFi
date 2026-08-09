@@ -1,3 +1,5 @@
+**NOTE: This project has now been superseded by [PerryFi 2](https://github.com/SanPollo/PerryFi2), an updated Amstrad PCW wifi card that uses only modern components, and is capable of far greater speeds. This repository is, therefore, no longer maintained.**
+
 # PerryFi
 
 1. [Introduction](#introduction)
